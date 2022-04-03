@@ -1,6 +1,6 @@
 import { USUARIOS } from './../../shared/model/usuarios';
 import { Component, OnInit } from '@angular/core';
-import { Usuario } from 'src/app/shared/model/usuario';
+import { Usuario } from '../../shared/model/usuario';
 
 @Component({
   selector: 'app-cadastrar-usuario',
