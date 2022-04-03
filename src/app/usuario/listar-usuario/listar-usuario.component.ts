@@ -1,3 +1,5 @@
+import { USUARIOS } from './../../shared/model/usuarios';
+// import { Usuario } from 'src/app/shared/model/usuario';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarUsuarioComponent implements OnInit {
 
-  constructor() { }
+  usuarios = USUARIOS;
 
-  ngOnInit(): void {
+  // usuario: Usuario;
+  // usuarios: Array<Usuario>;
+
+  constructor() { 
+    // this.usuario = new Usuario()
+    // this.usuarios = new Array<Usuario>();
   }
 
+  ngOnInit(): void {}
+
+  
 }

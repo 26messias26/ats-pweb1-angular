@@ -1,0 +1,64 @@
+
+*{
+    font-family: sans-serif;
+}
+
+.lista-usuarios{
+    padding: 10px;
+}
+
+.card-usuario{
+    width: 230px;
+    height: 280px;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario-header{
+    display: flex;
+    justify-content: center;
+    background: rgb(124, 16, 173);
+    padding: 8px;
+    color: white;
+
+    .usu-title{
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.usu-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #f88500;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 15px;
+
+    :first-child{
+        font-size: 50px;
+        font-weight: 700;
+        margin: auto 0;
+    }
+}
+
+.usu-footer{
+    background: rgb(124, 16, 173);
+    margin: 0;
+    padding: 10px;
+
+    .usu-edit{
+        background: #f88500;
+    }
+}
+
