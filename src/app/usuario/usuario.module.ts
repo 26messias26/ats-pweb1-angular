@@ -4,15 +4,13 @@ import { CommonModule } from '@angular/common';
 import { ListarUsuarioComponent } from './listar-usuario/listar-usuario.component';
 import { CadastrarUsuarioComponent } from './cadastrar-usuario/cadastrar-usuario.component';
 
- 
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 
-
-
+import {FlexAlignDirective, FlexLayoutModule, FlexModule} from '@angular/flex-layout'
 
 @NgModule({
   declarations: [
@@ -28,8 +26,9 @@ import { MatIconModule } from '@angular/material/icon';
     FormsModule,
     MatButtonModule,
     MatIconModule,
-    
-
+    FlexLayoutModule,
+    // FlexAlignDirective,
+    FlexModule,
   ],
   exports:[
     ListarUsuarioComponent,

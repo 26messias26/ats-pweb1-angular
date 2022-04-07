@@ -1,3 +1,4 @@
+import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from './layout/layout.module';
 import { UsuarioModule } from './usuario/usuario.module';
 // import { MenuComponent } from './layout/menu/menu.component';
@@ -20,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     UsuarioModule,
     LayoutModule,
     BrowserAnimationsModule,
+    MatIconModule,
 
     
   ],

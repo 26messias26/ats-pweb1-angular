@@ -20,8 +20,11 @@ export class CadastrarUsuarioComponent implements OnInit {
 
   marcarReserva():void{
     if (this.usuario.nome){
-      this.usuarios.push(this.usuario);
-      this.usuario = new Usuario();
+      if(Number(this.usuario.mesa)<10){
+        this.usuario.mesa = '0' + this.usuario.mesa
+        this.usuarios.push(this.usuario);
+        this.usuario = new Usuario();
+      }
 
     }
     console.log(this.usuarios)
