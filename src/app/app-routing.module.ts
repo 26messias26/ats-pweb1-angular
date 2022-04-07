@@ -5,6 +5,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path:'',
+    component:ListarUsuarioComponent
+  },
+  {
     path:'cadastrarusuario',
     component: CadastrarUsuarioComponent
   },
@@ -12,6 +16,7 @@ const routes: Routes = [
     path:'listarusuarios',
     component: ListarUsuarioComponent
   }
+
 ];
 
 @NgModule({
