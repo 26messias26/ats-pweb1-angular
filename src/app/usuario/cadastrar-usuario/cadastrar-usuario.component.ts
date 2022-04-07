@@ -22,9 +22,9 @@ export class CadastrarUsuarioComponent implements OnInit {
     if (this.usuario.nome){
       if(Number(this.usuario.mesa)<10){
         this.usuario.mesa = '0' + this.usuario.mesa
-        this.usuarios.push(this.usuario);
-        this.usuario = new Usuario();
       }
+      this.usuarios.push(this.usuario);
+      this.usuario = new Usuario();
 
     }
     console.log(this.usuarios)
