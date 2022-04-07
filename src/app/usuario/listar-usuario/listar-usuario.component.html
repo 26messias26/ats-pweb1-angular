@@ -1,21 +1,23 @@
+<div class="lista-usuarios">
 
-<div *ngFor="let usuario of usuarios" fxLayout="column" fxLayoutAlign="space-evenly center" class="lista-usuarios">
-
-    <mat-card *ngIf="usuario.nome" class="card-usuario">
+    <div *ngFor="let usuario of usuarios">
         
-        <mat-card-header class="usuario-header" >
-            <mat-card-title class="usu-title" >
-                {{usuario.nome}} - {{usuario.cpf}}
-            </mat-card-title>            
-        </mat-card-header>
-        <mat-card-content class="usu-content">
-            <span> Mesa {{usuario.mesa}} </span>
-            <span>{{usuario.data}} - {{usuario.horario}}</span>
-        </mat-card-content>
-        <mat-card-footer class="usu-footer">
-            <button mat-raised-button mat-icon-button class="usu-edit">
-                <mat-icon>add</mat-icon>
-            </button>
-        </mat-card-footer>
-    </mat-card>
+        <mat-card *ngIf="usuario.nome" class="card-usuario">
+            
+            <mat-card-header class="usuario-header" >
+                <mat-card-title class="usu-title" >
+                    {{usuario.nome}} - {{usuario.cpf}}
+                </mat-card-title>            
+            </mat-card-header>
+            <mat-card-content class="usu-content">
+                <span> Mesa {{usuario.mesa}} </span>
+                <span>{{usuario.data}} - {{usuario.horario}}</span>
+            </mat-card-content>
+            <mat-card-footer class="usu-footer">
+                <button mat-raised-button mat-icon-button class="usu-edit">
+                    <mat-icon>add</mat-icon>
+                </button>
+            </mat-card-footer>
+        </mat-card>
+    </div>
 </div>

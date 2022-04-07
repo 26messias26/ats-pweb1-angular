@@ -5,12 +5,14 @@
 
 .lista-usuarios{
     padding: 10px;
+    display: flex;
 }
 
 .card-usuario{
     width: 230px;
     height: 280px;
     padding: 0;
+    margin-left: 10px;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
