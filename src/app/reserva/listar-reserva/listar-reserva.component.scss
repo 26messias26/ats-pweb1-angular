@@ -58,9 +58,17 @@
     background: rgb(124, 16, 173);
     margin: 0;
     padding: 10px;
+    
 
     .usu-edit{
         background: #f88500;
+        font-weight: 600;
+    }
+
+    .usu-cancel{
+        font-weight: 600;
+        background: #f88500;
+        margin-left: 10px;
     }
 }
 
