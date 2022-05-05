@@ -1,4 +1,4 @@
-export class Usuario{
+export class Reserva{
     nome: string ='';
     cpf: string =''; 
     mesa: string ='';

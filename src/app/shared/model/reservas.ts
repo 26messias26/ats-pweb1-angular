@@ -1,4 +1,4 @@
-export let USUARIOS = [
+export let reservas = [
     {
     nome: 'Messias',
     cpf: '123456', 

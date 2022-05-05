@@ -1,6 +1,6 @@
 import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from './layout/layout.module';
-import { UsuarioModule } from './usuario/usuario.module';
+import { ReservaModule } from './reserva/reserva.module';
 // import { MenuComponent } from './layout/menu/menu.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,7 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsuarioModule,
+    ReservaModule,
     LayoutModule,
     BrowserAnimationsModule,
     MatIconModule,

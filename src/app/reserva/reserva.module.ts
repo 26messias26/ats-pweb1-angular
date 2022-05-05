@@ -1,8 +1,8 @@
 import { MatButtonModule } from '@angular/material/button';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListarUsuarioComponent } from './listar-usuario/listar-usuario.component';
-import { CadastrarUsuarioComponent } from './cadastrar-usuario/cadastrar-usuario.component';
+import { ListarReservaComponent } from './listar-reserva/listar-reserva.component';
+import { CadastrarReservaComponent } from './cadastrar-reserva/cadastrar-reserva.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -14,8 +14,8 @@ import {FlexAlignDirective, FlexLayoutModule, FlexModule} from '@angular/flex-la
 
 @NgModule({
   declarations: [
-    ListarUsuarioComponent,
-    CadastrarUsuarioComponent
+    ListarReservaComponent,
+    CadastrarReservaComponent
   ]
   ,
   imports: [
@@ -31,8 +31,8 @@ import {FlexAlignDirective, FlexLayoutModule, FlexModule} from '@angular/flex-la
     FlexModule,
   ],
   exports:[
-    ListarUsuarioComponent,
-    CadastrarUsuarioComponent
+    ListarReservaComponent,
+    CadastrarReservaComponent
   ]
 })
-export class UsuarioModule { }
+export class ReservaModule { }

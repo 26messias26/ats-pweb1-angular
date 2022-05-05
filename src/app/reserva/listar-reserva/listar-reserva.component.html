@@ -1,17 +1,17 @@
 <div class="lista-usuarios">
 
-    <div *ngFor="let usuario of usuarios">
+    <div *ngFor="let reserva of reservas">
         
-        <mat-card *ngIf="usuario.nome" class="card-usuario">
+        <mat-card *ngIf="reserva.nome" class="card-usuario">
             
             <mat-card-header class="usuario-header" >
                 <mat-card-title class="usu-title" >
-                    {{usuario.nome}} - {{usuario.cpf}}
+                    {{reserva.nome}} - {{reserva.cpf}}
                 </mat-card-title>            
             </mat-card-header>
             <mat-card-content class="usu-content">
-                <span> Mesa {{usuario.mesa}} </span>
-                <span>{{usuario.data}} - {{usuario.horario}}</span>
+                <span> Mesa {{reserva.mesa}} </span>
+                <span>{{reserva.data}} - {{reserva.horario}}</span>
             </mat-card-content>
             <mat-card-footer class="usu-footer">
                 <button mat-raised-button mat-icon-button class="usu-edit">

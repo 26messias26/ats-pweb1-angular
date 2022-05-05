@@ -1,20 +1,20 @@
-import { ListarUsuarioComponent } from './usuario/listar-usuario/listar-usuario.component';
-import { CadastrarUsuarioComponent } from './usuario/cadastrar-usuario/cadastrar-usuario.component';
+import { ListarReservaComponent } from './reserva/listar-reserva/listar-reserva.component';
+import { CadastrarReservaComponent } from './reserva/cadastrar-reserva/cadastrar-reserva.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
     path:'',
-    component:ListarUsuarioComponent
+    component:ListarReservaComponent
   },
   {
-    path:'cadastrarusuario',
-    component: CadastrarUsuarioComponent
+    path:'cadastrarreserva',
+    component: CadastrarReservaComponent
   },
   {
-    path:'listarusuarios',
-    component: ListarUsuarioComponent
+    path:'listarreservas',
+    component: ListarReservaComponent
   }
 
 ];
