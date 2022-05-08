@@ -1,3 +1,4 @@
+import { PipesModule } from './../shared/pipes/pipes.module';
 import { MatButtonModule } from '@angular/material/button';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -20,7 +21,8 @@ import { TabelaReservaComponent } from './tabela-reserva/tabela-reserva.componen
   declarations: [
     ListarReservaComponent,
     CadastrarReservaComponent,
-    TabelaReservaComponent
+    TabelaReservaComponent,
+    
   ]
   ,
   imports: [
@@ -34,7 +36,8 @@ import { TabelaReservaComponent } from './tabela-reserva/tabela-reserva.componen
     FlexLayoutModule,
     // FlexAlignDirective,
     FlexModule,
-    MatTableModule
+    MatTableModule,
+    PipesModule,
   ],
   exports:[
     ListarReservaComponent,

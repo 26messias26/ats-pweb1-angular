@@ -18,7 +18,7 @@
     </ng-container>
     <ng-container matColumnDef="cpf">
         <mat-header-cell *matHeaderCellDef>CPF</mat-header-cell>
-        <mat-cell *matCellDef="let item">{{item.cpf}}</mat-cell>
+        <mat-cell *matCellDef="let item">{{item.cpf | cpf}}</mat-cell>
     </ng-container>
     <ng-container matColumnDef="mesa">
         <mat-header-cell *matHeaderCellDef>Mesa</mat-header-cell>
