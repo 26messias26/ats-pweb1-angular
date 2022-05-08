@@ -10,12 +10,14 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 
-import {FlexAlignDirective, FlexLayoutModule, FlexModule} from '@angular/flex-layout'
+import {FlexAlignDirective, FlexLayoutModule, FlexModule} from '@angular/flex-layout';
+import { TabelaReservaComponent } from './tabela-reserva/tabela-reserva.component'
 
 @NgModule({
   declarations: [
     ListarReservaComponent,
-    CadastrarReservaComponent
+    CadastrarReservaComponent,
+    TabelaReservaComponent
   ]
   ,
   imports: [

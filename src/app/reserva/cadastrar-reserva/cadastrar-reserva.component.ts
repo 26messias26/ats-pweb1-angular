@@ -13,9 +13,12 @@ export class CadastrarReservaComponent implements OnInit {
   reserva:Reserva;
   reservas = reservas;
 
+  operacaoCadastro = true
+
   constructor(private reservaService:ReservaService, private rotaAtual: ActivatedRoute, private roteador: Router) { 
     this.reserva = new Reserva();
     if(this.rotaAtual.snapshot.paramMap.has('id')){
+      this.operacaoCadastro = false;
       const idParaEdicao = Number(this.rotaAtual.snapshot.paramMap.get('id'));
       this.reservaService.pesquisarPorId(idParaEdicao).subscribe(
         resultado => {
