@@ -2,35 +2,27 @@
   "reserva": [
     {
       "id": 1,
-      "nome": "Vitor solteiro",
-      "cpf": "74185296327",
-      "mesa": 2,
-      "horario": "22:00",
-      "data": "2022-06-12"
-    },
-    {
-      "id": 2,
-      "nome": "Vitoria Sanddyn",
-      "cpf": "74185654",
-      "mesa": 23,
-      "horario": "19:00",
+      "nome": "Messias Severino",
+      "cpf": "12345678912",
+      "mesa": 1,
+      "horario": "18:15",
       "data": "2022-05-08"
     },
     {
       "id": 3,
-      "nome": "murilo Solto",
-      "cpf": "54123696346",
-      "mesa": 27,
-      "horario": "23:00",
-      "data": "2022-05-12"
+      "nome": "Carlos muniz",
+      "cpf": "85274196356",
+      "mesa": 3,
+      "horario": "12:30",
+      "data": "2022-06-25"
     },
     {
       "id": 4,
-      "nome": "Pedro Sanpaio",
-      "cpf": "74185296356",
-      "mesa": 11,
-      "horario": "11:30",
-      "data": "2022-05-08"
+      "nome": "Maria",
+      "cpf": "45612378945",
+      "mesa": 5,
+      "horario": "12:00",
+      "data": "2022-05-09"
     }
   ]
 }

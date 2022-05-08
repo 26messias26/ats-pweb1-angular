@@ -9,9 +9,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
 
 import {FlexAlignDirective, FlexLayoutModule, FlexModule} from '@angular/flex-layout';
 import { TabelaReservaComponent } from './tabela-reserva/tabela-reserva.component'
+
+
 
 @NgModule({
   declarations: [
@@ -31,6 +34,7 @@ import { TabelaReservaComponent } from './tabela-reserva/tabela-reserva.componen
     FlexLayoutModule,
     // FlexAlignDirective,
     FlexModule,
+    MatTableModule
   ],
   exports:[
     ListarReservaComponent,

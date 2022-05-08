@@ -1,3 +1,4 @@
+import { TabelaReservaComponent } from './reserva/tabela-reserva/tabela-reserva.component';
 import { ListarReservaComponent } from './reserva/listar-reserva/listar-reserva.component';
 import { CadastrarReservaComponent } from './reserva/cadastrar-reserva/cadastrar-reserva.component';
 import { NgModule } from '@angular/core';
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path:'listarreservas',
     component: ListarReservaComponent
+  },
+  {
+    path:'listarreservastabela',
+    component: TabelaReservaComponent
   }
 
 ];
