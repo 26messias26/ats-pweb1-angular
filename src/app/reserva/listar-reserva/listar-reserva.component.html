@@ -14,10 +14,10 @@
                 <span>{{reserva.data}} - {{reserva.horario}}</span>
             </mat-card-content>
             <mat-card-footer class="usu-footer">
-                <button mat-flat-button class="usu-edit">
+                <button (click)="editar(reserva)" mat-flat-button class="usu-edit">
                     Editar
                 </button>
-                <button mat-flat-button class="usu-cancel">
+                <button (click)="cancelar(reserva)" mat-flat-button class="usu-cancel">
                     Cancelar
                 </button>
             </mat-card-footer>

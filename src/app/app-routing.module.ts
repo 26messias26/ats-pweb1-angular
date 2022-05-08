@@ -13,6 +13,10 @@ const routes: Routes = [
     component: CadastrarReservaComponent
   },
   {
+    path:'cadastrarreserva/:id',
+    component: CadastrarReservaComponent
+  },
+  {
     path:'listarreservas',
     component: ListarReservaComponent
   }

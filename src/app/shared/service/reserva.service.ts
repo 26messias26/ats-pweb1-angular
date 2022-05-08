@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ReservaService {
+  
 
   url = 'http://localhost:3000/reserva'
 
@@ -18,6 +19,17 @@ export class ReservaService {
 
   listar():Observable<Reserva[]>{
     return this.httpClient.get<Reserva[]>(this.url)
+  }
 
+  pesquisarPorId(id: Number): Observable<Reserva> {
+    return this.httpClient.get<Reserva>(`${this.url}/${id}`)
+  }
+
+  remover(id:number):Observable<object>{
+    return this.httpClient.delete(`${this.url}/${id}`)
+  }
+
+  atualizar(reserva:Reserva): Observable<Reserva>{ 
+    return this.httpClient.put<Reserva>(`${this.url}/${reserva.id}`,reserva)
   }
 }

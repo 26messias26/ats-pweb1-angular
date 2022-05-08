@@ -1,6 +1,28 @@
 {
-    "reserva":[{
-        
+  "reserva": [
+    {
+      "id": 1,
+      "nome": "Vitor solteiro",
+      "cpf": "74185296327",
+      "mesa": 2,
+      "horario": "22:00",
+      "data": "2022-06-12"
+    },
+    {
+      "id": 2,
+      "nome": "Vitoria Sanddyn",
+      "cpf": "74185654",
+      "mesa": 23,
+      "horario": "19:00",
+      "data": "2022-05-08"
+    },
+    {
+      "id": 3,
+      "nome": "murilo Solto",
+      "cpf": "54123696346",
+      "mesa": 27,
+      "horario": "23:00",
+      "data": "2022-05-12"
     }
-    ]
+  ]
 }
