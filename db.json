@@ -10,7 +10,7 @@
     },
     {
       "id": 3,
-      "nome": "Carlos muniz",
+      "nome": "Carlos munyz",
       "cpf": "85274196356",
       "mesa": 3,
       "horario": "12:30",
@@ -20,7 +20,7 @@
       "id": 4,
       "nome": "Maria",
       "cpf": "45612378945",
-      "mesa": 5,
+      "mesa": 7,
       "horario": "12:00",
       "data": "2022-05-09"
     }
