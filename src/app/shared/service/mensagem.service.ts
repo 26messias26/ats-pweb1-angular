@@ -34,7 +34,7 @@ export class MensagemService {
     snackConfig.duration = 5000;
     snackConfig.panelClass = classExtras;
 
-    this.snackBar.open('Resevado com sucesso!','x', snackConfig)
+    this.snackBar.open(mensagem,'x', snackConfig)
 
   }
 }

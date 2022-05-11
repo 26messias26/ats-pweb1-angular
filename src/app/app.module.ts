@@ -1,3 +1,4 @@
+import { InterceptorModule } from './interceptor/interceptor.module';
 import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from './layout/layout.module';
 import { ReservaModule } from './reserva/reserva.module';
@@ -25,7 +26,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     BrowserAnimationsModule,
     MatIconModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    InterceptorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
