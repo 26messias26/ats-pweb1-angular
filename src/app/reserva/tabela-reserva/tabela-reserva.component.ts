@@ -1,3 +1,4 @@
+import { ReservaFirestoreService } from './../../shared/service/reserva-firestore.service';
 import { Router } from '@angular/router';
 import { ReservaService } from './../../shared/service/reserva.service';
 import { Reserva } from 'src/app/shared/model/reserva';
@@ -14,7 +15,8 @@ export class TabelaReservaComponent implements OnInit {
   reservas!: MatTableDataSource<Reserva>;
   colunas = ['id','nome','cpf','mesa','horario','data','acoes']
 
-  constructor(private reservaService:ReservaService, private roteador:Router) {     
+  constructor(private reservaService:ReservaFirestoreService, private roteador:Router) {     
+    this.reservas = new MatTableDataSource<Reserva>()
   }
 
   ngOnInit(): void {  
@@ -27,7 +29,7 @@ export class TabelaReservaComponent implements OnInit {
     this.reservas.filter = value.trim().toLowerCase()
   }
 
-  apagar(id:number):void{
+  apagar(id:string):void{
     this.reservaService.remover(id).subscribe(
       apagado =>{
         const idReserva = this.reservas.data.findIndex(reserva => reserva.id === id)

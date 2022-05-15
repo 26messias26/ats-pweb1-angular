@@ -12,6 +12,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
+import { AngularFireModule} from '@angular/fire/compat'
+import { FirebaseConfig } from './../../firebase.config';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import {AngularFireAuthModule} from '@angular/fire/compat/auth';
+import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +33,13 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatIconModule,
     HttpClientModule,
     MatSnackBarModule,
-    InterceptorModule
+    InterceptorModule,
+
+    AngularFireModule.initializeApp(FirebaseConfig.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

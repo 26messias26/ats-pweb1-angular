@@ -21,11 +21,11 @@ export class ReservaService {
     return this.httpClient.get<Reserva[]>(this.url)
   }
 
-  pesquisarPorId(id: Number): Observable<Reserva> {
+  pesquisarPorId(id: string |''): Observable<Reserva> {
     return this.httpClient.get<Reserva>(`${this.url}/${id}`)
   }
 
-  remover(id:number):Observable<object>{
+  remover(id:string |''):Observable<object>{
     return this.httpClient.delete(`${this.url}/${id}`)
   }
 

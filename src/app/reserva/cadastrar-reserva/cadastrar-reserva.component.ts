@@ -1,3 +1,4 @@
+import { ReservaFirestoreService } from './../../shared/service/reserva-firestore.service';
 import { MensagemService } from './../../shared/service/mensagem.service';
 import { ReservaService } from './../../shared/service/reserva.service';
 import { reservas } from '../../shared/model/reservas';
@@ -18,7 +19,7 @@ export class CadastrarReservaComponent implements OnInit {
   operacaoCadastro = true
 
   constructor(
-    private reservaService:ReservaService, 
+    private reservaService:ReservaFirestoreService, 
     private rotaAtual: ActivatedRoute, 
     private roteador: Router,
     private mensagemService:MensagemService,
@@ -26,11 +27,9 @@ export class CadastrarReservaComponent implements OnInit {
       this.reserva = new Reserva();
       if(this.rotaAtual.snapshot.paramMap.has('id')){
         this.operacaoCadastro = false;
-        const idParaEdicao = Number(this.rotaAtual.snapshot.paramMap.get('id'));
+        const idParaEdicao = this.rotaAtual.snapshot.paramMap.get('id');
         this.reservaService.pesquisarPorId(idParaEdicao).subscribe(
-          resultado => {
-          this.reserva = resultado 
-          }
+          resultado => this.reserva = resultado
         );
       }
   }
@@ -50,7 +49,7 @@ export class CadastrarReservaComponent implements OnInit {
     }else{
       this.reservaService.cadastrar(this.reserva).subscribe(
         reserva => {
-          console.log(`Reserva de ${reserva.nome} realizada com sucesso!`)
+          console.log(`Reserva de ${reserva} realizada com sucesso!`)
          this.mensagemService.success('Mesa reservada com sucesso!')
           this.roteador.navigate(['listarreservas'])
         }

@@ -1,3 +1,4 @@
+import { ReservaFirestoreService } from './../../shared/service/reserva-firestore.service';
 import { ReservaService } from './../../shared/service/reserva.service';
 import { Reserva } from 'src/app/shared/model/reserva';
 import { Component, OnInit } from '@angular/core';
@@ -12,7 +13,7 @@ export class ListarReservaComponent implements OnInit {
 
   reservas: Array<Reserva>
 
-  constructor(private reservaService:ReservaService, private roteador: Router) { 
+  constructor(private reservaService:ReservaFirestoreService, private roteador: Router) { 
     this.reservas = new Array<Reserva>()
   }
 
@@ -27,7 +28,7 @@ export class ListarReservaComponent implements OnInit {
   }
 
   cancelar(reserva:Reserva){
-    this.reservaService.remover(reserva.id).subscribe(
+    this.reservaService.remover(reserva.id || '').subscribe(
       restposta => {
         const idReserva = this.reservas.findIndex(reservaR => reservaR.cpf === reserva.cpf);
         if(idReserva > -1){
